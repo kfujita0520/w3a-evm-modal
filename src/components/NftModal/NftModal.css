@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Germania+One&family=Inter:wght@500&family=Outfit:wght@500&display=swap');
+
+.NftTitle {
+    font-family: 'Germania One', system-ui;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background: linear-gradient(180deg, #F3E49F 0%, #D1BC7A 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.NftSubTitle {
+    color: #FFF;
+    font-family: 'Outfit', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.NftRank {
+    color: #FFF;
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.NftViews {
+    color: #FFF;
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 6px;
+}
+
+.NftPriceDiv {
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.04);
+    /*width: 100%;*/
+    margin-top: 32px;
+    padding-left: 16px;
+    padding-top: 13px;
+    padding-bottom: 21px;
+}
+
+.NftCurrentPrice {
+    color: rgba(255, 255, 255, 0.70);
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.NftPriceInEth {
+    color: #FFF;
+    font-family: 'Outfit', sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.NftPriceInUsd {
+    color: #FFF;
+    font-family: 'Outfit', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 8px;
+}
+
+.NftBuyNowButton {
+    border-radius: 8px;
+    background: linear-gradient(180deg, #F3E49F 0%, #BEA766 100%);
+    color: #1B1D1C;
+    text-shadow: 0px 2px 0px rgba(255, 255, 255, 0.25);
+    font-family: 'Germania One', system-ui;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    width: 100%;
+    margin-top: 35px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.NftDisclaimer {
+    color: #FFF;
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 100%;
+    margin-top: 33px;
+}
+
+.NftModalMainContainer {
+    display: flex;
+    flex-direction: row;
+    width: 910px;
+    padding-left: 63px;
+    padding-right: 63px;
+    border-radius: 20px;
+    background-color: #141816;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    margin-top: 4%;
+    align-items: center;
+    padding-top: 47px;
+    padding-bottom: 47px;
+}
+
+.NftImage {
+    width: 398px;
+    height: 560px;
+}
+
+.NftDataContainer {
+    flex: 1;
+    margin-left: 60px;
+    display: flex;
+    flex-direction: column
+}
+
+.NftTitleContainer {
+    width: 100%;
+}
+
+.NftSubTitleContainer {
+    width: 100%;
+    margin-top: 7.82px;
+}
+
+.NftRankContainer {
+    /*width: 100%;*/
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.EyeIcon {
+    width: 20px;
+    height: 14px;
+    margin-left: 41px;
+}
+
+.PriceInEthContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .NftModalMainContainer {
+        width: 80vw;
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .NftImage {
+        width: 100%;
+        height: 409px;
+    }
+
+    .NftDataContainer {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .NftTitle {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .NftSubTitleContainer {
+        margin-top: 4px;
+    }
+
+    .NftSubTitle {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .NftRankContainer {
+        margin-top: 12px;
+        justify-content: center;
+    }
+
+    .NftRank {
+        font-size: 12px;
+    }
+
+    .NftViews {
+        font-size: 12px;
+        margin-left: 4px;
+    }
+
+    .NftPriceDiv {
+        margin-top: 16px;
+        padding-left: 16px;
+        padding-top: 13px;
+        padding-bottom: 16px;
+    }
+
+    .NftCurrentPrice {
+        font-size: 12px;
+    }
+
+    .NftPriceInEth {
+        font-size: 20px;
+    }
+
+    .NftPriceInUsd {
+        font-size: 16px;
+        margin-left: 6px;
+    }
+
+    .NftBuyNowButton {
+        font-size: 16px;
+        margin-top: 16px;
+        height: 40px;
+    }
+
+    .NftDisclaimer {
+        font-size: 12px;
+        margin-top: 16px;
+    }
+
+    .EyeIcon {
+        /*width: 20px;*/
+        /*height: 14px;*/
+        margin-left: 16px;
+    }
+
+}
+
+
