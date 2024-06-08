@@ -11,7 +11,7 @@ import { Web3Auth } from "@web3auth/modal";
 
 // IMP START - SDK Initialization
 // IMP START - Dashboard Registration
-const clientId = "BMbdSsM_yJvENfwTVID5B_3zLST3VKoy_f913vDjeUN7fivs3lpBBm0AgHiB2gZDbeyW-iXUNdrFXw-WcelpT0o"; // get from https://dashboard.web3auth.io
+const clientId = "BGYRn46Yl0I96FuMFZ8G4DvE1xo1SyKGngV-sHRNU9S4t6XfqlG4XjfJJu-97gxBPQLgbiqylcHwdAftDVRPi_k"; // get from https://dashboard.web3auth.io
 
 
 const chainConfig = {
@@ -31,7 +31,7 @@ const chainConfig = {
   
   const web3auth = new Web3Auth({
     clientId,
-    web3AuthNetwork: WEB3AUTH_NETWORK.SAPPHIRE_DEVNET,
+    web3AuthNetwork: WEB3AUTH_NETWORK.SAPPHIRE_MAINNET,
     privateKeyProvider,
   });
   // IMP END - SDK Initialization
