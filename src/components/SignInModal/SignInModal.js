@@ -31,7 +31,7 @@ const chainConfig = {
   
   const web3auth = new Web3Auth({
     clientId,
-    web3AuthNetwork: WEB3AUTH_NETWORK.SAPPHIRE_MAINNET,
+    web3AuthNetwork: WEB3AUTH_NETWORK.SAPPHIRE_DEVNET,
     privateKeyProvider,
   });
   // IMP END - SDK Initialization
@@ -70,9 +70,9 @@ function  SignInModal() {
 
     const onConnectWeb3AuthClicked = async () => {
          // IMP START - SDK Initialization
-         await web3auth.initModal();
-         // IMP END - SDK Initialization
-         //setProvider(web3auth.provider);
+        await web3auth.initModal();
+        const w3authProvider = await web3auth.connect();
+        window.SingularityEvent.loginWithProvider(w3authProvider)
     }
 
 
@@ -82,18 +82,11 @@ function  SignInModal() {
 
         try{
             await onConnectWeb3AuthClicked()
-            loginNowUsingWeb3AuthProvider()
         } catch (e) {
             console.error(e)
             setSignInLoading(false)
         }
     };
-
-    const loginNowUsingWeb3AuthProvider = () => {
-        window.SingularityEvent.loginWithProvider(web3auth)
-    }
-
-
 
     const loginNow = () => {
         const user = new CognitoUser({
